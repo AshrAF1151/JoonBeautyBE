@@ -16,7 +16,7 @@ namespace JCOP.Controllers
 {
     public class AuthenticationController : Controller
     {
-        private readonly string _connectionString = @"Data Source=13.52.54.82,1433\EC2AMAZ-GLMLTJA;Initial Catalog=SparkDB;User ID=sa;Password=Pass123;";
+        private readonly string _connectionString = @"Data Source=192.168.44.2\\SQLEXPRESS;Initial Catalog=SparkDB;User Id=sparkuser; Password=Spark123;";
         private readonly IConfiguration _configuration;
 
         public AuthenticationController(IConfiguration configuration)

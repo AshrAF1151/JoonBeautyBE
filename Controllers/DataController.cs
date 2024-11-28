@@ -192,7 +192,8 @@ namespace JCOP.Controllers
         {
             try
             {
-                string connectionString = @"Data Source=13.52.54.82,1433\EC2AMAZ-GLMLTJA;Initial Catalog=SparkDB;User ID=sa;Password=Pass123;";
+                //string connectionString = @"Data Source=13.52.54.82,1433\EC2AMAZ-GLMLTJA;Initial Catalog=SparkDB;User ID=sa;Password=Pass123;";
+                string connectionString = @"Data Source=192.168.44.2\\SQLEXPRESS; Initial Catalog=SparkDB;User Id=sparkuser; Password=Spark123;";
                 SqlConnection conn = new SqlConnection();
                 conn.ConnectionString = connectionString;
                 conn.Open();
